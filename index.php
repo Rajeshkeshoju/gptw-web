@@ -79,7 +79,7 @@ span{color:red;}
 	 						</div> </td><td>
 	 					<div align="right">
 	 						<h3 align="center" style="color:blue">NOTIFICATIONS</h3>
-	 						<iframe src="http://www.sbtet.telangana.gov.in/Pages/Notifications.aspx" height="300px" width="800px"></iframe>
+	 						<iframe src="https://www.sbtet.telangana.gov.in/?page_id=175" height="300px" width="800px"></iframe>
 	 					</div>
 	 				</td></tr>
 	 				</table>
