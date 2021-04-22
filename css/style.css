@@ -11,7 +11,7 @@ body {
   padding: 0%;
   font-family: "Quicksand";
 }
-.header-container {
+div.header-container {
   margin: 0%;
   padding: 1px;
   width: 100%;
@@ -23,7 +23,7 @@ body {
   text-align: center;
   background: #4ffbdf;
 }
-.header-container img {
+div.header-container img {
   width: 10%;
   height: 100%;
   float: left;
