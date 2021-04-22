@@ -242,17 +242,22 @@ div.course-container div.course a h3:hover {
   color: var(--primary-color);
 }
 /* ABOUT US SECTION*/
+div.info-container {
+  margin: 8px;
+  margin-bottom: 20px;
+}
 div.info-container h2 {
   margin-top: 20px;
   margin-bottom: 4px;
   padding: 1px;
+  text-align: justify;
   color: var(--primary-color);
   font-weight: bolder;
   font-size: 2rem;
 }
 div.info-container p {
   margin: 10px;
-  justify-self: right;
+  text-align: justify;
 }
 div.info-container h2::before {
   display: inline-block;
@@ -270,6 +275,47 @@ div.info-container h2::after {
   width: 70%;
   background-color: var(--primary-color);
   margin-bottom: 10px;
+}
+/**
+  IFRAME SECTION
+*/
+div.iframe-container {
+  width: 100%;
+  height: 500px;
+}
+div.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid black;
+}
+div.iframe-container h2 {
+  margin: 20px 8px 20px 8px;
+  padding: 1px;
+  text-align: justify;
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+div.iframe-container h2::before {
+  display: inline-block;
+  content: " ";
+  height: 3px;
+  width: 100px;
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+div.iframe-container h2::after {
+  display: inline-block;
+  content: " ";
+  height: 3px;
+  width: 70%;
+  background-color: var(--primary-color);
+  margin-bottom: 10px;
+}
+#id2 {
+  width: 30px;
+  height: 30px;
 }
 /*
 div.course-container {
