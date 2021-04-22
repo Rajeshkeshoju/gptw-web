@@ -49,12 +49,25 @@
         <li><a href="http://">Contact Us</a></li>
       </ul>
     </nav>
-    <form class="results-container" action="">
-      <fieldset>
-        <legend>Results</legend>
-        <label for="pin">Enter Pin:</label>
-        <input type="text" placeholder="Enter Pin" />
-      </fieldset>
-    </form>
+    <div class="form-container">
+      <form class="results-container" action="">
+        <fieldset>
+          <legend>Results</legend>
+          <label for="pin">Enter Pin:</label>
+          <input type="text" placeholder="Enter Pin" />
+          <label for="pin" id="semester">Sem:</label>
+          <input list="semesters" placeholder="Select Sem" />
+          <datalist id="semesters">
+            <option value="Sem l"></option>
+            <option value="Sem ll"></option>
+            <option value="Sem lll"></option>
+            <option value="Sem lV"></option>
+            <option value="Sem V"></option>
+            <option value="Sem Vl"></option>
+          </datalist>
+        </fieldset>
+        <div class="align-right"><button>Get Results</button></div>
+      </form>
+    </div>
   </body>
 </html>

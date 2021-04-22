@@ -85,11 +85,8 @@ h1 {
   margin-left: 5px;
 }
 #menu li a:hover {
-  animation-name: changecolor;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
   color: #cd3f2c;
-  background: #4ffbdf;
+  animation: changeNavColor 1s forwards;
 }
 #menu input {
   display: none;
@@ -186,14 +183,17 @@ h1 {
     display: block;
   }
 }
+div.form-container {
+  width: 70%;
+  margin: 20px 0 0 30px;
+}
 form.results-container fieldset legend {
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: bolder;
 }
 form.results-container fieldset {
-  margin: 20px 0 0 30px;
-  width: 70%;
+  width: 100%;
   border: 2px solid var(--primary-color);
   justify-content: baseline;
 }
@@ -205,5 +205,64 @@ form.results-container fieldset label {
 form.results-container fieldset input[type="text"] {
   padding: 10px;
   margin: 5px 0 8px 8px;
+  border: 2px solid #ccc;
   border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+form.results-container fieldset input {
+  padding: 10px;
+  margin: 5px 0 8px 8px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  outline: none;
+}
+form.results-container fieldset input[type="text"]:focus {
+  border: 2px solid var(--primary-color);
+}
+form.results-container fieldset input[type="text"]:hover {
+  border: 2px solid var(--primary-color);
+}
+#semester{
+  margin-left:10px;
+}
+form.results-container div.align-right {
+  width: 100%;
+  margin: 10px 0 0 0;
+  text-align: right;
+}
+form.results-container div.align-right button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #4caf50;
+  outline: none;
+  background: #4caf50;
+  color: rgb(255, 255, 255);
+}
+form.results-container div.align-right button:hover {
+  color: white;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  animation: changecolor 0.5s forwards;
+}
+
+@keyframes changecolor {
+  0% {
+    background: #4caf50;
+  }
+  100% {
+    background-color: var(--primary-color);
+  }
+}
+@keyframes changeNavColor {
+  0% {
+    background:var(--primary-color) ;
+  }
+  100% {
+    background-color: var(--secondary-color);
+  }
 }
