@@ -137,7 +137,7 @@
     </div>
     <div class="iframe-container">
       <h2>Notifications</h2>
-      <iframe src="https://www.sbtet.telangana.gov.in/"></iframe>
+      <iframe src="https://www.sbtet.telangana.gov.in/?page_id=175"></iframe>
     </div>
 
     <!--
