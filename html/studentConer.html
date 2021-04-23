@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Students Corner</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+  </head>
+  <body>
+    <!--header-->
+
+    <div class="header-container">
+      <div>
+        <img src="../images/gptimages/gpt.jpg" />
+        <h1>Government polytechnic.</h1>
+        <h4>Warangal,506002.</h4>
+      </div>
+    </div>
+    <nav id="menu">
+      <input
+        type="checkbox"
+        id="responsive-menu"
+        onclick="updatemenu()"
+      /><label></label>
+      <ul>
+        <li><a href="http://">Home</a></li>
+        <li>
+          <a class="dropdown-arrow" href="http://">Courses</a>
+          <ul class="sub-menus">
+            <li><a href="http://">Computer Science Engineering</a></li>
+            <li>
+              <a href="http://">Electronics and Communication Engineering</a>
+            </li>
+            <li>
+              <a href="http://">Electrical and Electronics Engineering</a>
+            </li>
+            <li><a href="http://">Civil Engineering</a></li>
+            <li><a href="http://">Mechanical Engineering</a></li>
+          </ul>
+        </li>
+        <li><a href="http://">About</a></li>
+        <li>
+          <a href="http://">Gallery</a>
+        </li>
+        <li>
+          <a href="http://">Student Corner</a>
+        </li>
+        <li>
+          <a href="http://">Login</a>
+        </li>
+
+        <li><a href="http://">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="form-container">
+      <form class="results-container" action="">
+        <fieldset>
+          <legend>Results</legend>
+          <label for="pin">Enter Pin:</label>
+          <input type="text" placeholder="Enter Pin" />
+          <label for="pin" id="semester">Sem:</label>
+          <input list="semesters" placeholder="Select Sem" />
+          <datalist id="semesters">
+            <option value="Sem l"></option>
+            <option value="Sem ll"></option>
+            <option value="Sem lll"></option>
+            <option value="Sem lV"></option>
+            <option value="Sem V"></option>
+            <option value="Sem Vl"></option>
+          </datalist>
+        </fieldset>
+        <div class="align-right"><button>Get Results</button></div>
+      </form>
+    </div>
+  </body>
+</html>
